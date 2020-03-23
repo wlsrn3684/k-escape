@@ -1,0 +1,96 @@
+/* common css */
+
+body {
+    font-weight: 400;
+    line-height: 1.5;
+    margin: 0px;
+    letter-spacing: .5px;
+}
+
+/* sidebar css */
+
+#sidebar-wrapper {
+    position: fixed;
+    width: 250px;
+    height: 100%;
+}
+
+#sidebar-wrapper .sidebar-content {
+
+}
+
+#sidebar-wrapper a {
+    color: black;
+}
+
+#sidebar-wrapper .brand-logo {
+    text-align: center;
+    line-height: 64px;
+    border-bottom: 1px solid lightgray;
+   
+}
+
+.brand-logo .logo-icon {
+    background-image: url(/images/vw_logo_color_64px.png);
+}
+
+#sidebar-wrapper .sidebar-menu {
+    padding: 10px;
+    list-style: none;
+}
+
+.sidebar-menu .menu-header {
+    margin: 5px 0px;
+    padding: 4px 25px 4px 7px;
+    font-size: 12px;
+}
+
+.sidebar-menu a {
+    padding: 10px 5px 10px 5px;
+    font-size: 15px;
+    width: 100%;
+    color: gray;
+}
+
+.sidebar-menu li {
+    display: list-item;
+    padding: 10px;
+    margin: 5px 0px;
+    padding: 0px;
+}
+
+.sidebar-menu li i {
+    margin-right: 8px;
+}
+
+.sidebar-menu li .right-align {
+    float: right;
+}
+
+
+/* content css */
+
+
+
+
+/*  */
+
+
+
+/*  */
+
+
+
+/*  */
+
+
+
+/*  */
+
+
+
+/*  */
+
+
+
+/*  */
