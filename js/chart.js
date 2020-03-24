@@ -28,7 +28,9 @@ $(document).ready( () => {
     var myline = new Chart( line, {
         type: 'line',
         data: line_data,
-        options: {}
+        options: {
+            maintainAspectRatio: false
+        }
     })
 
 
@@ -55,6 +57,8 @@ $(document).ready( () => {
     var mydoughnut = new Chart( doughnut, {
         type: 'doughnut',
         data: doughnut_data,
-        options: {}
+        options: {
+            maintainAspectRatio: false
+        }
     })
 })

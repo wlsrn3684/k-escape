@@ -124,6 +124,7 @@ body {
 
 .graph-layout {
     height: 440px;
+    margin-bottom: 24px;
 }
 
 .card .card-header {
@@ -135,7 +136,7 @@ body {
 }
 
 .card .card-content {
-    margin: 28.7px 0px;
+    margin: 36.3px 0px;
 }
 
 .card-content i {
@@ -143,6 +144,11 @@ body {
 }
 
 .card .card-subscribe {
+    width: 100%;
+    display: block;
+    overflow-x: auto;
+    white-space: nowrap;
+    font-size: 13px;
 }
 
 .card-subscribe table {
@@ -227,6 +233,10 @@ body {
 
     #content-wrapper {
         padding-top: 64px;
+    }
+
+    #content-wrapper .card-subscribe {
+        font-size: 12px;
     }
 }
 
