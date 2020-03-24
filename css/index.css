@@ -106,7 +106,23 @@ body {
     width: 100%;
     height: 64px;
     position: fixed;
-    background: #f8f9fa;
+    background: white;
+    z-index: 1;
+    box-shadow: 0 5px 15px rgba(57, 98, 254, 0.02), 0 3px 6px rgba(117, 108, 254, 0.12);
+}
+
+
+
+#topbar-wrapper button {
+    border: none;
+    background-color: white;
+    float: right;
+}
+
+#topbar-wrapper i {
+    margin: 17px;
+    height: 100%;
+    font-size: 28px;
 }
 
 /* content css */
@@ -217,6 +233,9 @@ body {
     background: white;
 }
 
+.row-layout {
+    margin-top: 20px;
+}
 
 
 /*  */
@@ -248,5 +267,19 @@ body {
 
     #content-wrapper {
         margin-left: 250px;
+    }
+}
+
+@media(max-width: 1200px) {
+
+    #content-wrapper .responsive-layout {
+        margin-top: 20px;
+    }
+
+}
+
+@media(max-width: 990px) {
+    #content-wrapper .responsive-layout2 {
+        margin-top: 20px;
     }
 }
