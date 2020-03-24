@@ -7,14 +7,22 @@ $(document).ready( () => {
         datasets: [{
             label: '전공학점',
             backgroundColor: 'rgba(255, 99, 132, 0.1)',
+            borderWidth: 0,
+            pointRadius: 0,
             data: [ 0, 0, 3.6, 3.7, 3.5, 3.5, 3.5, 3.5]
         }
         ,
         {
             label: '전체학점',
             backgroundColor: 'rgba(22, 0, 132, 0.1)',
-            data: [4.0, 3, 3, 4, 3, 4, 4]
+            borderWidth: 0,
+            pointRadius: 0,
+            data: [4.0, 3, 3, 4, 3, 4, 4, 4.5]
         }]
+    }
+
+    var line_option = {
+
     }
 
     var myline = new Chart( line, {
