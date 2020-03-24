@@ -20,6 +20,7 @@
     
     <!-- Chart -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.bundle.min.js"></script>
 
     <!-- css -->
     <link rel="stylesheet" href="css/index.css">
@@ -221,18 +222,53 @@
             <div class="row">
                 <div class="col-12 col-lg-8 col-xl-8">
                     <div class="card">
-                        <div class="card-header"></div>
-                        <div class="card-content"></div>
+                        <div class="card-header">
+                            학점 그래프
+                        </div>
+                        <div class="card-content">
+                            <canvas id="myline"></canvas>
+                        </div>
                         <div class=""></div>
                     </div>
                 </div>
                 <div class="col-12 col-lg-4 col-xl-4">
                     <div class="card">
-                        <div class="card-header"></div>
+                        <div class="card-header">
+                            <p>이수학점 분포표</p>
+                        </div>
                         <div class="card-content">
                             <canvas id="mydoughnut"></canvas>
                         </div>
-                        <div class="card-subscribe"></div>
+                        <div class="card-subscribe">
+                            <table class="table">
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <i class="fa fa-circle" style="color:rgb(255, 99, 132);"></i>
+                                            전공학점
+                                        </td>
+                                        <td>30학점 / 45학점</td>
+                                        <td>35%</td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <i class="fa fa-circle" style="color: rgb(54, 162, 235);"></i>
+                                            교양학점
+                                        </td>
+                                        <td>30학점 / 45학점</td>
+                                        <td>35%</td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <i class="fa fa-circle" style="color: rgb(222, 222, 222);"></i>
+                                            미이수
+                                        </td>
+                                        <td>30학점 / 45학점</td>
+                                        <td>35%</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
                     </div>
                 </div>
             </div>

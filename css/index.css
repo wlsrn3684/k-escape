@@ -120,7 +120,29 @@ body {
 
 /* graph css */
 
+.card .card-header {
+    background: white;
+}
 
+.card-header p {
+    margin: 0px;
+}
+
+.card .card-content {
+
+}
+
+.card-content i {
+    
+}
+
+.card .card-subscribe {
+
+}
+
+.card-subscribe table {
+    margin: 0px;
+}
 
 /* card css */
 
