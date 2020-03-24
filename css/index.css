@@ -7,69 +7,121 @@ body {
     letter-spacing: .5px;
 }
 
+
+
 /* sidebar css */
 
 #sidebar-wrapper {
-    position: fixed;
     width: 250px;
     height: 100%;
-}
-
-#sidebar-wrapper .sidebar-content {
-
+    position: fixed;
 }
 
 #sidebar-wrapper a {
-    color: black;
+    text-decoration: none;
 }
 
 #sidebar-wrapper .brand-logo {
     text-align: center;
-    line-height: 64px;
+    height: 64px;
     border-bottom: 1px solid lightgray;
-   
+    line-height: 64px;
 }
 
 .brand-logo .logo-icon {
-    background-image: url(/images/vw_logo_color_64px.png);
+    width: 60px;
+    border-style: none;
+    vertical-align: middle;
+}
+
+.brand-logo .logo-text {
+    color: black;
+    font-size: 24px;
+    font-weight: 700;
+    display: inline-block;
+    position: relative;
+    top: 5px;
+    text-align: center;
+    line-height: 50px;
 }
 
 #sidebar-wrapper .sidebar-menu {
-    padding: 10px;
     list-style: none;
+    margin: 0px;
+    padding: 10px;
+}
+
+.sidebar-menu>li {
+    position: relative;
+    margin: 5px 0px;
+}
+
+.sidebar-menu>li>a {
+    padding: 6px 5px 6px 15px;
+    display: block;
+    font-size: 15px;
 }
 
 .sidebar-menu .menu-header {
-    margin: 5px 0px;
-    padding: 4px 25px 4px 7px;
-    font-size: 12px;
+    margin: 4px 25px 4px 15px;
+    font-size: 14px;
 }
 
-.sidebar-menu a {
-    padding: 10px 5px 10px 5px;
-    font-size: 15px;
-    width: 100%;
-    color: gray;
+.sidebar-menu .menu-content {
+    color: black;
 }
 
-.sidebar-menu li {
-    display: list-item;
-    padding: 10px;
-    margin: 5px 0px;
-    padding: 0px;
-}
-
-.sidebar-menu li i {
-    margin-right: 8px;
-}
-
-.sidebar-menu li .right-align {
+.menu-content .align-left {
     float: right;
+    margin-right: 16px;
 }
 
+.sidebar-menu .sub-menu {
+    padding-left: 15px;
+}
+
+.sidebar-menu .sub-menu>li>a {
+    padding: 5px 5px 5px 15px;
+}
+
+.sub-menu li {
+    list-style: none;
+}
+
+.sub-menu li a {
+    color: black;
+}
+
+.sub-menu li i {
+    font-size: 10px;
+}
+
+
+
+/* topbar css */
+
+#topbar-wrapper {
+    width: 100%;
+    height: 64px;
+    position: fixed;
+    background: #f8f9fa;
+}
 
 /* content css */
 
+#content-wrapper {
+    background: #17a2b8;
+}
+
+/* schedule css */
+
+
+
+/* graph css */
+
+
+
+/* card css */
 
 
 
@@ -77,20 +129,26 @@ body {
 
 
 
-/*  */
+/* media query */
 
+@media(max-width: 1025px) {
 
+    #sidebar-wrapper {
+        display: none;
+    }
 
-/*  */
+    #content-wrapper {
+        padding-top: 64px;
+    }
+}
 
+@media(min-width: 1025px) {
+    
+    #topbar-wrapper {
+        display: none;    
+    }
 
-
-/*  */
-
-
-
-/*  */
-
-
-
-/*  */
+    #content-wrapper {
+        margin-left: 250px;
+    }
+}
