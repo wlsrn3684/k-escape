@@ -17,14 +17,16 @@
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-
+    
     <!-- Chart -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"></script>
 
     <!-- css -->
     <link rel="stylesheet" href="css/index.css">
 
     <!-- js -->
     <script src="js/index.js"></script>
+    <script src="js/chart.js"></script>
 
 </head>
 <body>
@@ -47,7 +49,7 @@
                     <a class="menu-content" href="">
                         <i class="fas fa-star"></i>
                         <span>TEST</span>
-                        <i class="fas fa-sort-down align-left"></i>
+                        <i class="fas fa-sort-down align-right"></i>
                     </a>
                     <ul class="sub-menu">
                         <li>
@@ -141,8 +143,102 @@
 
         <!-- start content -->
         <div id="content-wrapper">
+            <div class="row mt-3">
+                <div class="col-12 col-lg-6 col-xl-3">
+                    <div class="card gradient-blue">
+                        <div class="card-body">
+                            <p>3.56 / 4.5</p>
+                            <div class="progress-bar">
+                                <div class="percentage" style="width: 20%;"></div>
+                            </div>
+                            <p>
+                                전체학점
+                                <span class="align-right">
+                                    34.2%
+                                    <i class="fas fa-arrow-up"></i>
+                                </span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-lg-6 col-xl-3">
+                    <div class="card gradient-orange">
+                        <div class="card-body">
+                            <p>3.76 / 4.5</p>
+                            <div class="progress-bar">
+                                <div class="percentage" style="width: 72%;"></div>
+                            </div>
+                            <p>
+                                전공학점
+                                <span class="align-right">
+                                    34.2%
+                                    <i class="fas fa-arrow-up"></i>
+                                </span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-lg-6 col-xl-3">
+                    <div class="card gradient-green">
+                        <div class="card-body">
+                            <p>24학점 / 45학점</p>
+                            <div class="progress-bar">
+                                <div class="percentage" style="width: 50%;"></div>
+                            </div>
+                            <p>
+                                전공학점
+                                <span class="align-right">
+                                    15학점
+                                    <i class="fas fa-arrow-up"></i>
+                                </span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-lg-6 col-xl-3">
+                    <div class="card gradient-red">
+                        <div class="card-body">
+                            <p>121학점 / 140학점</p>
+                            <div class="progress-bar">
+                                <div class="percentage" style="width: 32%;"></div>
+                            </div>
+                            <p>
+                                전체학점
+                                <span class="align-right">
+                                    6학점
+                                    <i class="fas fa-arrow-up"></i>
+                                </span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="row">
+                <div class="col-12 col-lg-8 col-xl-8">
+                    <div class="card">
+                        <div class="card-header"></div>
+                        <div class="card-content"></div>
+                        <div class=""></div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-4 col-xl-4">
+                    <div class="card">
+                        <div class="card-header"></div>
+                        <div class="card-content">
+                            <canvas id="mydoughnut"></canvas>
+                        </div>
+                        <div class="card-subscribe"></div>
+                    </div>
+                </div>
+            </div>
+
             
-               
+
         </div>
         <!-- end content -->
     </div>

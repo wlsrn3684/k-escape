@@ -71,9 +71,9 @@ body {
     color: black;
 }
 
-.menu-content .align-left {
+.align-right {
     float: right;
-    margin-right: 16px;
+    margin-right: 12px;
 }
 
 .sidebar-menu .sub-menu {
@@ -110,7 +110,8 @@ body {
 /* content css */
 
 #content-wrapper {
-    background: #17a2b8;
+    background: #f8f9fa;
+    padding: 0px 40px 10px 40px;
 }
 
 /* schedule css */
@@ -122,6 +123,66 @@ body {
 
 
 /* card css */
+
+.card {
+    border-radius: 6px;
+    box-shadow: 0 5px 15px rgba(57, 98, 254, 0.02), 0 3px 6px rgba(117, 108, 254, 0.12);
+}
+
+#content-wrapper .card-body {
+    height: 120px;
+    padding: 18px;
+}
+
+.gradient-blue {
+    background: linear-gradient(45deg, #6a11cb , #2575fc)!important;
+    margin: 10px 0px;
+}
+
+.gradient-red {
+    background: linear-gradient(45deg, #ee0979, #ff6a00)!important;
+    margin: 10px 0px;
+}
+
+.gradient-green {
+    background: linear-gradient(45deg, #00b09b, #96c93d)!important;
+    margin: 10px 0px;
+}
+
+.gradient-orange {
+    background: linear-gradient(45deg, #fc4a1a, #f7b733)!important;
+    margin: 10px 0px;
+}
+
+.card-body {
+    color: white;
+}
+
+.card-body p {
+    font-size: 15.5px;
+    font-weight: 700;
+}
+
+.card-body p span {
+    margin-right: 2px;
+}
+
+.card-body i {
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.card-body .progress-bar {
+    height: 3px;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.1);
+    margin: 18px 0px;
+}
+
+.progress-bar .percentage {
+    height: 3px;
+    background: white;
+}
 
 
 
