@@ -117,12 +117,32 @@ body {
     border: none;
     background-color: white;
     float: right;
+    outline: 0;
 }
 
 #topbar-wrapper i {
     margin: 17px;
     height: 100%;
     font-size: 28px;
+}
+
+#topbar-wrapper .animate-blind {
+    height: 64px;
+    width: 100%;
+    background: white;
+}
+
+#topbar-wrapper ul {
+    margin: 0px;
+    position: relative;
+    z-index: -1;
+    background: white;
+    box-shadow: 0 5px 15px rgba(57, 98, 254, 0.02), 0 3px 6px rgba(117, 108, 254, 0.12);
+}
+
+#topbar-wrapper li {
+    border-top: 1px solid lightgray;
+    
 }
 
 /* content css */
