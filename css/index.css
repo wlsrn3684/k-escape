@@ -75,7 +75,6 @@ body {
 .brand-logo .logo-icon {
     width: 40px;
     border-style: none;
-    vertical-align: middle;
 }
 
 .brand-logo .logo-text {
@@ -85,8 +84,13 @@ body {
     display: inline-block;
     position: relative;
     top: 5px;
+    margin: 0px;
     text-align: center;
     line-height: 50px;
+}
+
+#sidebar-wrapper a {
+    text-decoration: none;
 }
 
 #sidebar-wrapper .accodion {
