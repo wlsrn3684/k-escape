@@ -3,20 +3,28 @@ $(document).ready(function(){
     var istoggle = false
 
     $('.toggle-btn').click( () => {
-        $('.toggle-menu').css({'display':''})
+        $('#sidebar-wrapper').css({'display':'inline-block'})
         if(istoggle) {
-            $('.toggle-menu').removeClass("animated")
-            $('.toggle-menu').removeClass("slideInDown")  
-            $('.toggle-menu').addClass("animated")
-            $('.toggle-menu').addClass("slideOutUp")  
+            $('#sidebar-wrapper').removeClass("animated")
+            $('#sidebar-wrapper').removeClass("slideInLeft")  
+            $('#sidebar-wrapper').addClass("animated")
+            $('#sidebar-wrapper').addClass("slideOutLeft")  
             istoggle = false
         }
         else {
-            $('.toggle-menu').removeClass("animated")
-            $('.toggle-menu').removeClass("slideOutUp")
-            $('.toggle-menu').addClass("animated")
-            $('.toggle-menu').addClass("slideInDown")
+            $('#sidebar-wrapper').removeClass("animated")
+            $('#sidebar-wrapper').removeClass("slideOutLeft")
+            $('#sidebar-wrapper').addClass("animated")
+            $('#sidebar-wrapper').addClass("slideInLeft")
             istoggle = true
+        }
+    })
+
+    $(window).resize( () => {
+        var width_size = window.outerWidth
+
+        if(width_size) {
+            
         }
     })
 

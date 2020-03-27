@@ -268,6 +268,8 @@ body {
 
     #sidebar-wrapper {
         display: none;
+        z-index: 2;
+        background: white;
     }
 
     #content-wrapper {
