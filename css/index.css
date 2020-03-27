@@ -61,10 +61,8 @@ body {
     width: 250px;
     height: 100%;
     position: fixed;
-}
-
-#sidebar-wrapper a {
-    text-decoration: none;
+    background: rgb(124, 209, 189);
+    color: white;
 }
 
 #sidebar-wrapper .brand-logo {
@@ -75,13 +73,13 @@ body {
 }
 
 .brand-logo .logo-icon {
-    width: 60px;
+    width: 40px;
     border-style: none;
     vertical-align: middle;
 }
 
 .brand-logo .logo-text {
-    color: black;
+    color: white;
     font-size: 24px;
     font-weight: 700;
     display: inline-block;
@@ -91,57 +89,69 @@ body {
     line-height: 50px;
 }
 
-#sidebar-wrapper .sidebar-menu {
-    list-style: none;
-    margin: 0px;
-    padding: 10px;
+#sidebar-wrapper .accodion {
+    
 }
 
-.sidebar-menu>li {
+.accodion .menu-header {
+    padding: 8px 12px;
+    font-size: 13.5px;
+}
+
+.accodion .menu-content {
+    padding: 8px 12px;
+    width: 100%;
+}
+
+.menu-content a {
+    color: white;
+}
+
+.accodion>div {
     position: relative;
-    margin: 5px 0px;
-    border-bottom: 1px solid lightgray;
+    margin: 0px;
+    background: rgb(124, 209, 189);
 }
 
-.sidebar-menu>li>a {
-    padding: 6px 5px 6px 15px;
-    display: block;
-    font-size: 15px;
+.accodion>div>div {
+    background: rgb(105, 204, 181);
 }
 
-.sidebar-menu .menu-header {
-    margin: 4px 25px 4px 15px;
-    font-size: 14px;
-    border: none;
+.accodion>div>div>ul {
+    margin: 0px;
 }
 
-.sidebar-menu .menu-content {
-    color: black;
+.accodion>div>div>ul>li {
+    padding: 5px 0px;
 }
 
-.align-right {
-    float: right;
-    margin-right: 12px;
+.accodion a {
+    text-decoration: none;
 }
 
-.sidebar-menu .sub-menu {
-    padding-left: 15px;
-}
-
-.sidebar-menu .sub-menu>li>a {
-    padding: 5px 5px 5px 15px;
-}
-
-.sub-menu li {
+.accodion ul {
     list-style: none;
 }
 
-.sub-menu li a {
-    color: black;
+.accodion .head button {
+    color: white;
+    text-decoration: none;
+    width: 100%;
 }
 
-.sub-menu li i {
-    font-size: 10px;
+.accodion .head span {
+    float: left;
+}
+
+.accodion .head i {
+    color: white;
+    float: right;
+    font-size: 1rem;
+}
+
+.head>div>ul>li>a {
+    text-decoration: none;
+    color: white;
 }
 
 
@@ -308,18 +318,27 @@ body {
 .overlay {
     display: none;
     position: fixed;
-    width: 100vw;
-    height: 100vh;
+    width: 100%;
+    height: 100%;
     background: rgba(0, 0, 0, 0.7);
     z-index: 2;
     opacity: 0;
     transition: all 0.5s ease-in-out;
 }
-/* display .overlay when it has the .active class */
 
 .overlay.active {
     display: block;
     opacity: 1;
+}
+
+.rotate {
+    transform: rotate(-90deg);
+    transition-duration: 0.5s;
+}
+
+.origin-rotate {
+    transform: rotate(90deg);
+    transition-duration: 0.3s;
 }
 
 /* media query */
@@ -329,7 +348,7 @@ body {
     #sidebar-wrapper {
         display: none;
         z-index: 2;
-        background: white;
+        background: rgb(124, 209, 189);
     }
 
     #content-wrapper {

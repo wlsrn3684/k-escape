@@ -1,0 +1,56 @@
+#sidebar-wrapper a {
+    text-decoration: none;
+}
+
+#sidebar-wrapper .sidebar-menu {
+    list-style: none;
+    margin: 0px;
+    padding: 10px;
+}
+
+.sidebar-menu>li {
+    position: relative;
+    margin: 5px 0px;
+    border-top: 1px solid lightgray;
+}
+
+.sidebar-menu>li>a {
+    padding: 6px 5px 6px 15px;
+    display: block;
+    font-size: 15px;
+}
+
+.sidebar-menu .menu-header {
+    margin: 4px 25px 4px 15px;
+    font-size: 14px;
+    border: none;
+}
+
+.sidebar-menu .menu-content {
+    color: black;
+}
+
+.align-right {
+    float: right;
+    margin-right: 12px;
+}
+
+.sidebar-menu .sub-menu {
+    padding-left: 15px;
+}
+
+.sidebar-menu .sub-menu>li>a {
+    padding: 5px 5px 5px 15px;
+}
+
+.sub-menu li {
+    list-style: none;
+}
+
+.sub-menu li a {
+    color: black;
+}
+
+.sub-menu li i {
+    font-size: 10px;
+}

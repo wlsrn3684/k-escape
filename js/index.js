@@ -38,13 +38,36 @@ $(document).ready(function(){
     $(window).resize( () => {
         var width_size = window.outerWidth
         
-        if(width_size > 1025) {
+        if(width_size > 1033.1) {
             $('.overlay').removeClass("active")
             $('#sidebar-wrapper').removeClass("animated")
             $('#sidebar-wrapper').removeClass("slideInLeft")
+            $('#sidebar-wrapper').css({'display':''})
             istoggle = false
         }
 
     })
 
+    $('.head').click( (e) => {
+        var pre = document.getElementsByClassName('rotate')
+
+        if(pre) {
+            $(pre).removeClass('rotate')
+        }
+        
+        if(e.target.tagName === "I") {
+            $(e.target).addClass("rotate")
+        }
+        else if(e.target.tagName === "SPAN") {
+            $(e.target.parentElement.children[1]).addClass("rotate")
+        } 
+        else {
+            $(e.target.children[1]).addClass("rotate")
+        }
+            
+            
+    })
+
  })
+
+ var _test
