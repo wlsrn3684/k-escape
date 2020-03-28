@@ -76,7 +76,7 @@ body {
 .brand-logo .logo-icon {
     width: 40px;
     border-style: none;
-    vertical-align: bottom;
+    vertical-align: middle;
 }
 
 .brand-logo .logo-text {
@@ -343,8 +343,14 @@ body {
 }
 
 .origin-rotate {
-    transform: rotate(90deg);
+    transform: rotate(0deg);
     transition-duration: 0.3s;
+}
+
+/* hover */
+
+#sidebar-wrapper>.accodion>.head:hover {
+    background: rgb(105, 204, 181);
 }
 
 /* media query */

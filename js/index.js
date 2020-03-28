@@ -49,11 +49,17 @@ $(document).ready(function(){
     })
 
     $('.head').click( (e) => {
+        
         var pre = document.getElementsByClassName('rotate')
+        
+        _test = e
+        console.log(e);
 
-        if(pre) {
-            $(pre).removeClass('rotate')
+        if(pre[0]) {   
+            $(pre[0]).removeClass('rotate')
         }
+
+
         
         if(e.target.tagName === "I") {
             $(e.target).addClass("rotate")
