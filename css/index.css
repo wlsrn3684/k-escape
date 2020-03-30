@@ -62,7 +62,7 @@ body {
     width: 250px;
     height: 100%;
     position: fixed;
-    background: rgb(124, 209, 189);
+    background: rgb(7, 153, 182);
     color: white;
 }
 
@@ -116,11 +116,11 @@ body {
 .accodion>div {
     position: relative;
     margin: 0px;
-    background: rgb(124, 209, 189);
+    background: rgb(7, 153, 182);
 }
 
 .accodion>div>div {
-    background: rgb(105, 204, 181);
+    background: rgb(6, 135, 161);
 }
 
 .accodion>div>div>ul {
@@ -256,31 +256,39 @@ body {
 
 .card {
     border-radius: 6px;
-    box-shadow: 0 5px 15px rgba(57, 98, 254, 0.02), 0 3px 6px rgba(117, 108, 254, 0.12);
+    box-shadow: 0 5px 15px rgba(57, 98, 254, 0.02), 0 3px 6px rgba(111, 109, 143, 0.23);
 }
 
 #content-wrapper .card-body {
     height: 120px;
-    padding: 18px;
+    padding: 10px 20px;
 }
 
 .gradient-blue {
-    background: linear-gradient(45deg, #6a11cb , #2575fc)!important;
+    background: linear-gradient(180deg, rgb(54, 201, 181), rgb(66, 136, 228))!important;
+    border : 0;
+    border-radius: 10px;
     margin: 10px 0px;
 }
 
 .gradient-red {
-    background: linear-gradient(45deg, #ee0979, #ff6a00)!important;
+    background: linear-gradient(180deg,#FF7A90, #F0A44E)!important;
+    border : 0;
+    border-radius: 10px;
     margin: 10px 0px;
 }
 
 .gradient-green {
-    background: linear-gradient(45deg, #00b09b, #96c93d)!important;
+    background: linear-gradient(180deg,#C846E9, #804DF7 )!important;
+    border : 0;
+    border-radius: 10px;
     margin: 10px 0px;
 }
 
 .gradient-orange {
-    background: linear-gradient(45deg, #fc4a1a, #f7b733)!important;
+    background: linear-gradient(180deg, #6DABFC, #5560FD )!important;
+    border : 0;
+    border-radius: 10px;
     margin: 10px 0px;
 }
 
@@ -350,7 +358,7 @@ body {
 /* hover */
 
 #sidebar-wrapper>.accodion>.head:hover {
-    background: rgb(105, 204, 181);
+    background: rgb(6, 135, 161);
 }
 
 /* media query */
@@ -360,7 +368,7 @@ body {
     #sidebar-wrapper {
         display: none;
         z-index: 2;
-        background: rgb(124, 209, 189);
+        background: rgb(7, 153, 182);
     }
 
     #content-wrapper {
