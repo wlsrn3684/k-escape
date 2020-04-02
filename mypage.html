@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>K:ESCAPE</title>
+
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+    <!-- icon -->
+    <script src="https://kit.fontawesome.com/8d5f513f3f.js" crossorigin="anonymous"></script>
+    <link href="https://kit-free.fontawesome.com/releases/latest/css/free-v4-shims.min.css" media="all" rel="stylesheet">
+    <link href="https://kit-free.fontawesome.com/releases/latest/css/free-v4-font-face.min.css" media="all" rel="stylesheet">
+    <link href="https://kit-free.fontawesome.com/releases/latest/css/free.min.css" media="all" rel="stylesheet">
+    
+    <!-- Chart -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.bundle.min.js"></script>
+
+    <!-- animation -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.4.0/animate.min.css">
+
+    <!-- css -->
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/mypage.css">
+
+    <!-- js -->
+    <script src="js/main.js"></script>
+
+</head>
+<body>
+    
+    <!-- start wrapper -->
+    <div id="wrapper">
+        <!-- start loader -->
+        <div id="loader-wrapper" style="display: none">
+            <div class="pageloader"></div>
+            <h5 class="loader-header animated tada">K:ESCAPE</h5>
+        </div>
+        <!-- end loader -->
+
+        <div class="overlay"></div>
+        
+        <!-- start sidebar -->
+        <div id="sidebar-wrapper">
+            <div class="brand-logo" style="border: none;">
+                <a href="index.html">
+                    <img class="logo-icon" src="images/vw-logo--white.svg" alt="">
+                    <h5 class="logo-text">K:ESCAPE</h5>
+                </a>
+            </div>
+
+            <hr>
+
+            <div class="accodion" id="accodion-menu">
+                <div class="menu-header">
+                    MAIN MENU
+                </div>
+                <div id="first-head" class="head">
+                    <h2 class="mb-0">
+                        <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#first-collapse" aria-expanded="true" aria-controls="first-head">
+                            <span>FIRST</span>
+                            <i class="fas fa-chevron-left"></i>
+                        </button>
+                        
+                    </h2>
+                    <div id="first-collapse" class="collapse" aria-labelledby="first-head" data-parent="#accodion-menu">
+                        <ul>
+                            <li>
+                                <a href="" style="width: 100%;">test</a>
+                            </li>
+                            <li>
+                                <a href="">test</a>
+                            </li>
+                            <li>
+                                <a href="">test</a>
+                            </li>
+                            <li>
+                                <a href="">test</a>
+                            </li>
+                            <li>
+                                <a href="">test</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                
+
+                <div id="second-head" class="head">
+                    <h2 class="mb-0">
+                        <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#second-collapse" aria-expanded="true" aria-controls="second-head">
+                            <span>SECOND</span>
+                            <i class="fas fa-chevron-left"></i>
+                        </button>
+                    </h2>
+                    <div id="second-collapse" class="collapse" aria-labelledby="second-head" data-parent="#accodion-menu">
+                        <ul>
+                            <li>
+                                <a href="">test</a>
+                            </li>
+                            <li>
+                                <a href="">test</a>
+                            </li>
+                            <li>
+                                <a href="">test</a>
+                            </li>
+                            <li>
+                                <a href="">test</a>
+                            </li>
+                            <li>
+                                <a href="">test</a>
+                            </li>
+                            <li>
+                                <a href="">test</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                
+
+                <div id="third-head" class="head">
+                    <h2 class="mb-0">
+                        <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#third-collapse" aria-expanded="true" aria-controls="third-head">
+                            <span>THIRD</span>
+                            <i class="fas fa-chevron-left"></i>
+                        </button>
+                    </h2>
+                    <div id="third-collapse" class="collapse" aria-labelledby="third-head" data-parent="#accodion-menu">
+                        <ul>
+                            <li>
+                                <a href="">test</a>
+                            </li>
+                            <li>
+                                <a href="">test</a>
+                            </li>
+                            <li>
+                                <a href="">test</a>
+                            </li>
+                            <li>
+                                <a href="">test</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                
+
+                <div class="menu-content head">
+                    <a href="">TEST</a>
+                </div>
+
+                <div class="menu-content head">
+                    <a href="">TEST</a>
+                </div>
+
+                <div class="menu-content head">
+                    <a href="">TEST</a>
+                </div>
+
+            </div>
+        </div>
+        
+        <!-- end sidebar-->
+
+        <!-- start topbar -->
+        <div id="topbar-wrapper">
+            <div class="animate-blind">
+                <button class="toggle-btn"><i class="fas fa-bars"></i></button>
+            </div>
+            
+            <ul>
+
+            </ul>
+            
+            <ul class="toggle-menu" style="display: none;">
+                <li>
+                    <a href="">
+                        <i class="fas fa-star"></i>
+                        <span>TEST</span>
+                        <i class="fas fa-sort-down align-right"></i>            
+                    </a>
+                </li>
+                <li>b</li>
+
+                <li>
+                    <a class="menu-content" href="">
+                        <i class="fas fa-star"></i>
+                        <span>TEST</span>
+                        <i class="fas fa-sort-down align-right"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        
+        <!-- end topbar -->
+
+        <!-- start content -->
+        <div id="content-wrapper">
+            <div class="page-header">MY PAGE</div>
+            <div class="col-12 col-lg-12 col-xl-12">
+                <table class="table">
+                    <tbody>
+                      <tr>
+                        <th scope="row">아이디</th>
+                        <td>test123</td>
+                      </tr>  
+                      <tr>
+                        <th scope="row">비밀번호</th>
+                        <td>
+                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#changePW">비밀번호 변경하기</button>
+                            
+                            <div class="modal fade" id="changePW" tabindex="-1" role="dialog" aria-labelledby="changePWLabel" aria-hidden="true">
+                                <div class="modal-dialog" role="document">
+                                  <div class="modal-content">
+                                    <div class="modal-header">
+                                      <h5 class="modal-title" id="changePWLabel">비밀번호 변경</h5>
+                                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                      </button>
+                                    </div>
+                                    <div class="modal-body">
+                                      <form>
+                                        <div class="form-group">
+                                          <label for="recipient-name" class="col-form-label">현재 비밀번호</label>
+                                          <input type="text" class="form-control" id="recipient-name">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="recipient-name" class="col-form-label">새 비밀번호</label>
+                                            <input type="text" class="form-control" id="recipient-name">
+                                          </div>
+                                          <div class="form-group">
+                                            <label for="recipient-name" class="col-form-label">비밀번호 확인</label>
+                                            <input type="text" class="form-control" id="recipient-name">
+                                          </div>
+                                      </form>
+                                    </div>
+                                    <div class="modal-footer">
+                                      <button type="button" class="btn btn-secondary" data-dismiss="modal">닫기</button>
+                                      <button type="button" class="btn btn-primary">변경하기</button>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+
+                        </td>
+                      </tr>
+                      <tr>
+                        <th scope="row">이름</th>
+                        <td>홍길동</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">학번</th>
+                        <td>
+                            최종 학번 조회일 2020-04-02 13:36
+                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#refreshID">조회</button>
+                            
+                            <div class="modal fade" id="refreshID" tabindex="-1" role="dialog" aria-labelledby="refreshIDLabel" aria-hidden="true">
+                                <div class="modal-dialog" role="document">
+                                  <div class="modal-content">
+                                    <div class="modal-header">
+                                      <h5 class="modal-title" id="refreshIDLabel">비밀번호 변경</h5>
+                                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                      </button>
+                                    </div>
+                                    <div class="modal-body">
+                                      <form>
+                                        <div class="form-group">
+                                          <label for="recipient-name" class="col-form-label">학번</label>
+                                          <input type="text" class="form-control" id="recipient-name">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="recipient-name" class="col-form-label">비밀번호</label>
+                                            <input type="text" class="form-control" id="recipient-name">
+                                          </div>
+                                      </form>
+                                    </div>
+                                    <div class="modal-footer">
+                                      <button type="button" class="btn btn-secondary" data-dismiss="modal">닫기</button>
+                                      <button type="button" class="btn btn-primary">조회하기</button>
+                                    </div>
+                                  </div>
+                                </div>
+                            </div>
+                            
+                        </td>
+                      </tr>
+                      <tr>
+                        <th scope="row">최종 학번 조회일</th>
+                        <td>2020-04-02 13:36</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">이메일</th>
+                        <td>test123@naver.com</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">학과(부)</th>
+                        <td>@@@@@학부</td>
+                      </tr>
+                    </tbody>
+                  </table>
+            </div>
+        </div>
+
+
+        <!-- end content -->
+    </div>
+    <!-- end wrapper -->
+</body>
+</html>

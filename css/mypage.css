@@ -1,0 +1,33 @@
+#content-wrapper {
+    padding-top: 36px;
+    text-align: center;
+}
+
+#content-wrapper .page-header {
+    margin: 24px;
+    font-size: 48px;
+    margin: 0px;
+}
+
+#content-wrapper .table {
+    background: white;
+    margin-top: 48px;
+    text-align: left;
+    
+}
+
+.table th {
+    width: 180px;
+    height: 60px;
+    border: 1px solid #dee2e6;
+    vertical-align: middle;
+}
+
+.table td {
+    vertical-align: middle;
+    border: 1px solid #dee2e6;
+}
+
+.table button {
+
+}
