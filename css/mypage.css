@@ -1,17 +1,21 @@
 #content-wrapper {
-    padding-top: 36px;
-    text-align: center;
+    
+}
+
+#content-wrapper .bundle {
+    padding-top: 24px;
 }
 
 #content-wrapper .page-header {
     margin: 24px;
-    font-size: 48px;
+    padding: 0px 15px;
+    font-size: 28px;
     margin: 0px;
 }
 
 #content-wrapper .table {
     background: white;
-    margin-top: 48px;
+    margin-top: 24px;
     text-align: left;
     
 }
@@ -21,13 +25,10 @@
     height: 60px;
     border: 1px solid #dee2e6;
     vertical-align: middle;
+    background: #f8f9fa;
 }
 
 .table td {
     vertical-align: middle;
     border: 1px solid #dee2e6;
-}
-
-.table button {
-
 }

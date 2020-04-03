@@ -51,27 +51,24 @@ $(document).ready(function(){
     $('.head').click( (e) => {
         
         var pre = document.getElementsByClassName('rotate')
-        
-        _test = e
-        console.log(e);
+        var test = pre[0]
 
-        if(pre[0]) {   
-            $(pre[0]).removeClass('rotate')
+        if(pre[0] && (e.target.tagName === "I" || e.target.tagName === "SPAN" || e.target.tagName === "BUTTON")) {
+            $(pre[0]).removeClass('rotate') 
         }
 
-
-        
-        if(e.target.tagName === "I") {
+        if(e.target.tagName === "I" && test !== e.target) {
             $(e.target).addClass("rotate")
         }
-        else if(e.target.tagName === "SPAN") {
+        else if(e.target.tagName === "SPAN" && test !== e.target.parentElement.children[1]) {
             $(e.target.parentElement.children[1]).addClass("rotate")
         } 
-        else {
+        else if(e.target.tagName === "BUTTON" && test !== e.target.children[1]) {
             $(e.target.children[1]).addClass("rotate")
         }
             
-            
+        
+
     })
 
  })
